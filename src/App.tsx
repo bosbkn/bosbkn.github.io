@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useRef, useState } from "react";
+import { Slide } from "@mui/material";
+import { Catalog } from "./pages/Catalog";
+import { Letter } from "./pages/Letter";
+import "./App.css";
 
 function App() {
+  const containerRef = useRef(null);
+  const [isShowingCatalog, setIsShowingCatalog] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" ref={containerRef}>
+      <Slide
+        container={containerRef.current}
+        direction="down"
+        in={!isShowingCatalog}
+        mountOnEnter
+        unmountOnExit
+      >
+        <Letter
+          toggleIsShowting={setIsShowingCatalog.bind(null, !isShowingCatalog)}
+        />
+      </Slide>
+
+      <Slide
+        container={containerRef.current}
+        direction="up"
+        in={isShowingCatalog}
+        mountOnEnter
+        unmountOnExit
+      >
+        <Catalog
+          toggleIsShowting={setIsShowingCatalog.bind(null, !isShowingCatalog)}
+        />
+      </Slide>
     </div>
   );
 }
