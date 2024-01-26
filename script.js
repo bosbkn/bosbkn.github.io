@@ -1,27 +1,8 @@
-class Gift extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
+import { Gift } from "./components/Gift";
+import { NextButton } from "./components/NextButton";
 
-  connectedCallback() {
-    this.render();
-  }
-
-  render() {
-    const name = this.getAttribute("name");
-    const description = this.getAttribute("description");
-    this.shadowRoot.innerHTML = `
-      <style>
-        /* Add your custom styles here */
-      </style>
-      <div>
-        <!-- Add your custom HTML content here -->
-        <h2>${name}</h2>
-        <p>${description}</p>
-      </div>
-    `;
-  }
-}
+// import("./components/Gift");
+// import("./components/NextButton");
 
 customElements.define("gift-component", Gift);
+customElements.define("next-button", NextButton);
