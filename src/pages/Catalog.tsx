@@ -1,7 +1,7 @@
 import React from "react";
-import { Idea } from "../components/Idea";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import "../App.css";
+import { Ideas } from "../components/Carousel";
 
 interface CatalogProps {
   toggleIsShowting: () => void;
@@ -17,7 +17,7 @@ export const Catalog = React.forwardRef<HTMLDivElement, CatalogProps>(
           fontSize="large"
         />
 
-        <Idea name="Idea 1" description="This is the first idea" />
+        <Ideas />
       </div>
     );
   }
