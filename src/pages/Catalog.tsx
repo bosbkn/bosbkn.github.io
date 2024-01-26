@@ -1,7 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Idea } from "../components/Idea";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import "../App.css";
 
 interface CatalogProps {
@@ -12,13 +11,10 @@ export const Catalog = React.forwardRef<HTMLDivElement, CatalogProps>(
   ({ toggleIsShowting }, ref) => {
     return (
       <div ref={ref} className="catalog page">
-        <FontAwesomeIcon
+        <ArrowCircleUpIcon
+          className="icon"
           onClick={toggleIsShowting}
-          icon={icon({
-            name: "circle-chevron-up",
-            family: "classic",
-            style: "solid",
-          })}
+          fontSize="large"
         />
 
         <Idea name="Idea 1" description="This is the first idea" />

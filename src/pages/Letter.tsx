@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 import "../App.css";
 
 interface LetterProps {
@@ -31,14 +30,7 @@ export const Letter = React.forwardRef<HTMLDivElement, LetterProps>(
           in person!
         </p>
 
-        <FontAwesomeIcon
-          onClick={toggleIsShowting}
-          icon={icon({
-            name: "circle-chevron-down",
-            family: "classic",
-            style: "solid",
-          })}
-        />
+        <ArrowCircleDownIcon onClick={toggleIsShowting} fontSize="large" />
       </div>
     );
   }
