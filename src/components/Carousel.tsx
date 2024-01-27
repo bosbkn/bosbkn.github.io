@@ -16,27 +16,27 @@ const ideas: IdeaProps[] = [
   {
     name: "Plants",
     description:
-      "A plant for your new apartment! It brightens up the room and might be a great first addition to your new Sacramento home. I have a money tree, and it's pretty easy to take care of. We can be matching!",
+      "A plant for your new apartment! It brightens up the room and might be a great first addition to your new home. I have a money tree, and it's pretty easy to take care of. We can be matching!",
     image: "plants.jpg",
     link: "https://www.thesill.com/products/money-tree?variant=40829143810153",
   },
   {
     name: "LoungeBuddy",
     description:
-      "Traveling is always so exhausting and you travel so much! Here's a lounge pass for your next trip.",
+      "Traveling is always so exhausting and you travel so much! A lounge pass for your next trip? This link is for one in HK (the title and image are links).",
     image: "lounge_buddy.jpeg",
     link: "https://www.loungebuddy.com/HKG/plaza-premium-lounge-gate-35-terminal-1-yukt20iH1W ",
   },
   {
     name: "Viki",
     description:
-      "There's not much more you love than your sister, Vicki, but maybe K-Drama's one of them. Here's a way to watch it wherever you end up.",
+      "What's better than your sister, Vicki? A Viki that will show you K-Dramas.",
     image: "viki.jpg",
     link: "https://www.viki.com",
   },
   {
     name: "Bokksu",
-    description: "Snacks? Who doesn't snacks?",
+    description: "Snacks? Who doesn't like snacks?",
     image: "bokksu.jpeg",
     link: "https://www.bokksu.com",
   },
@@ -57,7 +57,7 @@ const ideas: IdeaProps[] = [
   {
     name: "HelloFresh",
     description:
-      "When you first move, you probably will be busy and tired. Here's a way to get some food without having to think about it!",
+      "When you first move, you probably will be busy and tired. Here's a way to get some food without having to think about groceries!",
     image: "hello_fresh.jpeg",
     link: "https://www.hellofresh.com/pages/raf_lp11?c=FIH-3JU8BI2IAQ06&utm_campaign=referralinvite&utm_medium=clipboard&utm_source=freebies&utm_invitername=Kentaro&utm_term=web&discount_comm_id=992270dc-a684-4b10-bd34-da8bb5f811b2",
   },
